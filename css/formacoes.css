@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: space-around;
 
-    height: 90vh;
+    height: 95vh;
 }
 
 .formacoes__titulo {
@@ -32,6 +32,9 @@
 .formacoes__box-imagem {
     background-color: white;
     width: 40vh;
+    height: 22.5vh;
+
+    display: block;
     
     border: 1px solid black;
     border-radius: 20px;

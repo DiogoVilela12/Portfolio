@@ -1,20 +1,23 @@
-.header {
+.cabecalho {
+    display: static;
     background: rgba(196, 196, 196, 0.11);
     backdrop-filter: blur(20px);
+
+    position: fixed;
+    z-index: 1;
+
     border-bottom: 1px solid black;
     transition: .1s;
-    position: fixed;
 
     height: 2.5rem;
     width: 100%;
     top: 0;
 }
 
-.cabecalho {
+.cabecalho__div {
     background-color: transparent;
 
     display: flex;
-    position: fixed;
     text-align: center;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +26,7 @@
     width: 100%;
 }
 
-.cabecalho__nome {
+.cabecalho__div-nome {
     background: rgba(196, 196, 196, 0.11);
 
     font-size: 20px;
@@ -33,12 +36,15 @@
 
 .cabecalho__menu {
     background-color: transparent;
+
     border: none;
+
     margin-right: 1rem;
 }
 
 .cabecalho__menu-img {
     background: transparent;
+
     width: 1.5rem;
 }
 
@@ -49,10 +55,11 @@
     visibility: hidden;
 
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    
+    text-align: center;
 
     top: 2.5rem;
     height: 10rem;
@@ -60,11 +67,49 @@
 }
 
 .cabecalho__menu-link {
-    background-color: transparent;
     color: black;
+    background-color: transparent;
 
     font-size: 1.2rem;
     font-weight: 600;
 
     text-decoration: none;
+}
+
+
+/* ____________________ Tablet Width 768px ____________________*/
+
+@media screen and (min-width:768px) and (max-width: 1440px) {
+    .cabecalho {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__div {        
+        width: 20%;
+    }
+
+    .cabecalho__menu-display {
+        position: static;
+        visibility: visible;
+    
+        justify-content: space-around;
+        flex-direction: row;
+        
+        text-align: center;
+    
+        height: 2.5rem;
+        width: 65%;
+    }
+    
+    .cabecalho__menu {
+        display: none;
+    }
+
+    .cabecalho__menu-link {
+        font-weight: normal;
+        font-size: 16px;
+    }
 }

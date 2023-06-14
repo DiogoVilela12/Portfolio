@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/habilidades.css">
     <link rel="stylesheet" href="css/projetos.css">
@@ -17,42 +17,49 @@
     <title>Diogo Vilela</title>
 </head>
 <body>
-    <header id="header" class="header">
-        <div id="cabecalho__menu-linha" class="cabecalho">
+    <header>
+        <nav id="cabecalho" class="cabecalho">
+            <div id="cabecalho__menu-linha" class="cabecalho__div">
+                <h1 class="cabecalho__div-nome">Diogo Vilela</h1>
 
-            <h1 class="cabecalho__nome">Diogo Vilela</h1>
+                <button onclick="mostrarMenu('cabecalho__menu-display')" id="botao__menu" class="cabecalho__menu">
+                    <img class="cabecalho__menu-img" src="svg/menu.svg" alt="menu hamburger">
+                </button>
+            </div>
 
-            <button onclick="mostrarMenu('cabecalho__menu-display')" id="botao__menu" class="cabecalho__menu">
+            <div id="cabecalho__menu-display" class="cabecalho__menu-display">
 
-                <img class="cabecalho__menu-img" src="svg/menu.svg" alt="menu hamburger">
+                <a onclick="esconderMenu('cabecalho__menu-display')" class="cabecalho__menu-link" href="#habilidades">HABILIDADES</a>
+                <a onclick="esconderMenu('cabecalho__menu-display')" class="cabecalho__menu-link" href="#projetos">PROJETOS</a>
+                <a onclick="esconderMenu('cabecalho__menu-display')" class="cabecalho__menu-link" href="#formacoes">FORMAÇÕES</a>
+                <a onclick="esconderMenu('cabecalho__menu-display')" class="cabecalho__menu-link" href="#contatos">CONTATOS</a>
+
+            </div>
+        </nav>
+    
+
+        <div class="sobre">
+            <div class="sobre__div-foto">
+
+                <img class="sobre__div-foto-img" 
+                src="img/Logo.png" 
+                alt="Minha Imagem Linkedin">
+
+                <h2 class="sobre__div-foto-titulo">Desenvolvedor Java</h2>
+            </div>
+
+            <div class="sobre__div-descricao">
                 
-            </button>
-        </div>
-
-        <div id="cabecalho__menu-display" class="cabecalho__menu-display">
-
-            <a onclick="esconderMenu('cabecalho__menu-display')" class="cabecalho__menu-link" href="#habilidades">HABILIDADES</a>
-            <a onclick="esconderMenu('cabecalho__menu-display')" class="cabecalho__menu-link" href="#projetos">PROJETOS</a>
-            <a onclick="esconderMenu('cabecalho__menu-display')" class="cabecalho__menu-link" href="#formacoes">FORMAÇÕES</a>
-            <a onclick="esconderMenu('cabecalho__menu-display')" class="cabecalho__menu-link" href="#contatos">CONTATOS</a>
-
+                <p class="sobre__div-descricao-texto">
+                Meu nome é Diogo Vilela e eu sou um apaixonado por tecnologia que decidiu trilhar o caminho da programação. Trabalho com desenvolvimento de software desde 2021 tendo me aperfeiçoado em Java.</p>
+            </div>
+            <nav id="habilidades" class="navigation_bar"></nav>
         </div>
     </header>
 
-    <div class="sobre">
-        <div class="sobre__box-foto">
-            <img class="sobre__foto" src="img/Logo.png" alt="Minha Imagem Linkedin">
-            <h2 class="sobre__titulo">Desenvolvedor Java</h2>
-        </div>
-        <div class="sobre__box-texto">
-            
-            <p class="sobre__texto">
-            Meu nome é Diogo Vilela e eu sou um apaixonado por tecnologia que decidiu trilhar o caminho da programação. Trabalho com desenvolvimento de software desde 2021 tendo me aperfeiçoado em Java.</p>
-        </div>
-        <nav id="habilidades" class="navigation_bar"></nav>
-    </div>
 
-    <div class="habilidades">
+
+    <section class="habilidades">
         <h2 class="habilidades__titulo">Habilidades</h2>
         <div class="habilidades__boxes">
 
@@ -94,7 +101,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <div class="projetos">
         <h2 class="projetos__titulo">Experiência profissional</h2>

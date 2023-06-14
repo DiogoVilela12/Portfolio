@@ -1,0 +1,70 @@
+.header {
+    background: rgba(196, 196, 196, 0.11);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid black;
+    transition: .1s;
+    position: fixed;
+
+    height: 2.5rem;
+    width: 100%;
+    top: 0;
+}
+
+.cabecalho {
+    background-color: transparent;
+
+    display: flex;
+    position: fixed;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 2.5rem;
+    width: 100%;
+}
+
+.cabecalho__nome {
+    background: rgba(196, 196, 196, 0.11);
+
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.cabecalho__menu {
+    background-color: transparent;
+    border: none;
+    margin-right: 1rem;
+}
+
+.cabecalho__menu-img {
+    background: transparent;
+    width: 1.5rem;
+}
+
+.cabecalho__menu-display {
+    background-color: transparent;
+    
+    position: fixed;
+    visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+
+    top: 2.5rem;
+    height: 10rem;
+    width: 100%;
+}
+
+.cabecalho__menu-link {
+    background-color: transparent;
+    color: black;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    text-decoration: none;
+}

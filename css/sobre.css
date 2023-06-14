@@ -1,0 +1,49 @@
+.sobre {
+    margin: 1rem;
+    margin-top: 3rem;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sobre__box-foto{
+    width: 100%;
+    height: 45vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sobre__titulo {
+    text-align: center;
+    font-weight: 600;
+    font-size: 3rem;
+    
+    margin: 0 2rem 0 2rem;
+}
+
+.sobre__foto {
+    width: 10rem;
+    border-radius: 100%;
+
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.sobre__box-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sobre__texto {
+    text-align: center;
+    font-size: 1.2rem;
+}

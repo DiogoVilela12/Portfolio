@@ -1,0 +1,8 @@
+* {
+    background-color: #E5E5E5;
+    scroll-behavior: smooth;
+}
+
+.navigation_bar {
+    visibility: hidden;
+}

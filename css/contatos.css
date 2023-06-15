@@ -7,6 +7,10 @@
     justify-content: center;
 
     height: 4rem;
+
+    -webkit-box-shadow: inset 0px 7px 9px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 7px 9px -4px rgba(0,0,0,0.75);
+box-shadow: inset 0px 7px 9px -4px rgba(0,0,0,0.75);
 }
 
 .contatos__texto {

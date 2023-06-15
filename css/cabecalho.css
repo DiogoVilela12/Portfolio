@@ -27,7 +27,7 @@
 }
 
 .cabecalho__div-nome {
-    background: rgba(196, 196, 196, 0.11);
+    background-color: transparent;
 
     font-size: 20px;
     font-weight: 600;

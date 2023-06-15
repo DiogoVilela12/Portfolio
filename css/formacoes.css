@@ -1,22 +1,39 @@
 .formacoes {
     background-color: white;
 
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    height: 95vh;
+    height: calc(100vh + 1rem);
+
+    -webkit-box-shadow: 0px 0px 24px 20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 24px 20px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 24px 20px rgba(0,0,0,0.75);
 }
 
 .formacoes__titulo {
     background-color: white;
-    font-size: 30px;
-    margin: 1rem;
-    text-align: center;
+
+    padding-top: 1rem;
+    
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.formacoes__boxes {
+    background-color:  white;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 1rem;
+    height: 80%;
 }
 
 .formacoes__box {
@@ -26,7 +43,9 @@
     align-items: center;
     justify-content: space-between;
 
-    height: 200px;
+    height: 120px;
+    margin: .5rem;
+
 }
 
 .formacoes__box-imagem {
@@ -42,4 +61,17 @@
     -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+}
+
+/* ____________________ Tablet Width 768px ____________________*/
+
+@media screen and (min-width:768px) and (max-width: 1440px) {
+    .formacoes {
+        height: 45vh;
+    }
+
+    .formacoes__boxes {
+        flex-direction: row;
+    }
+
 }

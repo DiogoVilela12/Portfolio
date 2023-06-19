@@ -13,3 +13,54 @@
 .navigation_bar {
     visibility: hidden;
 }
+
+/*___________ANIMATIONS_____________*/
+
+@keyframes shakeImage {
+    50% {rotate: 15deg;}
+    75% {rotate: -15deg;}
+}
+
+@keyframes shadowMoves {
+    0% {-webkit-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.75);}
+
+    25% {-webkit-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 15x 15px rgba(0,0,0,0.75);}
+
+    50%{-webkit-box-shadow: 0px 0px 24px 20px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 24px 20px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 24px 20px rgba(0,0,0,0.75);}
+
+    75%{-webkit-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 15x 15px rgba(0,0,0,0.75);}
+
+    100%{-webkit-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.75);}
+}
+
+@keyframes shadowMovesInSet {
+    0% {-webkit-box-shadow: inset 0px 10px 10px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 10px 10px 0px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 10px 10px 0px rgba(0,0,0,0.75);}
+
+    25% {-webkit-box-shadow: inset 0px 15px 10px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 15px 10px 0px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 15px 10px 0px rgba(0,0,0,0.75);}
+
+    50%{-webkit-box-shadow: inset 0px 18px 10px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 18px 10px 0px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 18px 10px 0px rgba(0,0,0,0.75);}
+
+    75%{-webkit-box-shadow: inset 0px 15px 10px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 15px 10px 0px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 15px 10px 0px rgba(0,0,0,0.75);}
+
+    100%{-webkit-box-shadow: inset 0px 10px 10px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 10px 10px 0px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 10px 10px 0px rgba(0,0,0,0.75);}
+}

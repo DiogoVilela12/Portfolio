@@ -7,7 +7,7 @@ function mostrarMenu(elemento) {
 
     } else {
         elemento.style.visibility = 'visible'
-        document.getElementById("cabecalho").style.height = "12.5rem";
+        document.getElementById("cabecalho").style.height = "15rem";
 
     }
 }

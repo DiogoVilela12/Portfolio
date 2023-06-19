@@ -1,4 +1,6 @@
 .formacoes {
+    animation: shadowMoves 10s infinite;
+
     background-color: white;
 
     display: flex;
@@ -6,17 +8,13 @@
     align-items: center;
     justify-content: space-between;
 
-    height: calc(100vh + 1rem);
-
-    -webkit-box-shadow: 0px 0px 24px 20px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 24px 20px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 24px 20px rgba(0,0,0,0.75);
+    height: calc(110vh + 1rem);
 }
 
 .formacoes__titulo {
     background-color: white;
 
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     
     font-weight: bold;
     text-align: center;

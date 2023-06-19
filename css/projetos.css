@@ -36,13 +36,14 @@
     align-items: center;
     justify-content: space-between;
 
-    height: 120px;
+    width: 40vh;
+    height: 22.5vh;
     margin: .5rem;
 }
 
 .projetos__box-imagem {
-    width: 40vh;
-    height: 22.5vh;
+    width: 100%;
+
     border: 1px solid black;
     border-radius: 20px;
 
@@ -53,14 +54,14 @@
 
 /* ____________________ Tablet Width 768px ____________________*/
 
-@media screen and (min-width:768px) and (max-width: 1440px) {
+@media screen and (min-width:768px){
     .projetos {
         height: 45vh;
     }
 
     .projetos__boxes {
         flex-direction: row;
-
+        width: 100%;
     }
 
 }

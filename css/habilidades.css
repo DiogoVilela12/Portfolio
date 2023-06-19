@@ -56,13 +56,13 @@
 }
 
 .habilidades__imagem {
-    background-color: white;
+    background-color: transparent;
 
-    width: 3rem;
+    width: 10vh;
 }
 
 .habilidades__texto {
-    background-color: white;
+    background-color: transparent;
 
     text-align: center;
     font-size: 1rem;
@@ -70,15 +70,15 @@
 
 /* ____________________ Tablet Width 768px ____________________*/
 
-@media screen and (min-width:768px) and (max-width: 1440px) {
+@media screen and (min-width:768px) {
     .habilidades {
         justify-content: space-between;
-
-        height: 100vh;
+        height: 45vh;
     }
     
     .habilidades__div-boxes {
         margin: 0;
+        
     }
     
     .habilidades__div {

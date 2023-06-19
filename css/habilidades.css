@@ -7,7 +7,7 @@
     justify-content: space-around;
     align-items: center;
 
-    height: 95vh;
+    height: calc(95vh + 2.5rem);
     
 }
 
@@ -15,7 +15,7 @@
     background-color: white;
     text-align: center;
     
-    padding: 1.5rem;
+    margin: 1.5rem;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -74,7 +74,7 @@
     .habilidades {
         justify-content: space-between;
 
-        height: 50vh;
+        height: 100vh;
     }
     
     .habilidades__div-boxes {

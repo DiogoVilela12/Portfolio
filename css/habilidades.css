@@ -3,37 +3,38 @@
     background-color: white;
 
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-
-    height: calc(95vh + 2.5rem);
-    
+    flex-direction: column;
 }
 
 .habilidades__titulo {
-    background-color: white;
+    background-color: transparent;
     text-align: center;
     
-    margin: 1.5rem;
+    margin: 3rem 0px 2rem 0px;
+
     font-size: 2rem;
     font-weight: 600;
 }
 
 .habilidades__div {
-    background-color: white;
+    background-color: transparent;
+    
     width: 100%;
 }
 
+.habilidades__div-divs {
+    background-color: transparent;
+}
+
 .habilidades__div-boxes {
-    background-color: white;
+    background-color: transparent;
 
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    width: calc(100% - 2rem);
-    margin: 1rem;
+    width: calc(100% - 8rem);
+    margin: 0 4rem;
     margin-bottom: 2rem;
 }
 
@@ -41,24 +42,26 @@
     background-color: white;
 
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 1px solid black;
+    border-radius: 1rem;
+
+    width: 40%;
 
     -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
-
-    border: 1px solid black;
-    border-radius: .5rem;
-    width: 30%;
-    height: 18vh;
 }
 
 .habilidades__imagem {
     background-color: transparent;
 
     width: 10vh;
+
+    margin: .5rem;
 }
 
 .habilidades__texto {
@@ -66,19 +69,33 @@
 
     text-align: center;
     font-size: 1rem;
+
+    margin: .5rem;
+}
+
+.habilidades__div-habilidade {
+    display: none;
+}
+
+.descricao__habilidade {
+    display: none;
 }
 
 /* ____________________ Tablet Width 768px ____________________*/
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) and (max-width: 1024px) {
     .habilidades {
         justify-content: space-between;
-        height: 45vh;
     }
     
     .habilidades__div-boxes {
-        margin: 0;
-        
+        margin: 0px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .habilidades__imagem {
+        width: 7vw;
     }
     
     .habilidades__div {
@@ -88,7 +105,97 @@
     }
     
     .habilidades__div-box {
-        width: 40%;
-        height: 20vh;
+        width: calc(100vw / 6 - 2rem);
+        margin: 1rem;
+    }
+    
+    .habilidades__div-divs {
+        display: flex;
+        justify-content: space-around;
+
+        width: 100vw;
+    }
+}
+
+/* ____________________ Tablet Width 1024px ____________________*/
+@media screen and (min-width:1024px){
+    .habilidades__div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        margin-bottom: 2rem;
+    }
+    
+    .habilidades__div-boxes {
+        width: 100%;
+    }
+
+    .habilidades__div-divs{
+        display: flex;
+        background-color: transparent;
+        flex-direction: column;
+        justify-content: space-around;
+
+        width: 40vw;
+        height: 70vh;
+    }
+
+    .descricao__habilidade {
+        background-color: white;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        width: 40vw;
+
+        margin: 2rem;
+
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+
+    .descricao__habilidade-titulo {
+        background-color: transparent;
+        font-size: 2rem;
+
+        margin: 1rem;
+    }
+
+    .descricao__habilidade-div {
+        background-color: transparent;
+        
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        visibility: hidden;
+        
+        height: 100%;
+    }
+
+    .descricao__habilidade-img {
+        background-color: transparent;
+
+        width: 10vh;
+        margin: 1rem;
+    }
+
+    .descricao__habilidade-texto {
+        background-color: transparent;
+
+        text-align: center;
+
+        margin: 2rem;
+    }
+
+    /*_____Animações____*/
+
+    .habilidades__div-box:hover {
+        transition: 3s;
+        background-color: gray;
     }
 }

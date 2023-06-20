@@ -20,3 +20,18 @@ function esconderMenu(elemento) {
         elemento.style.visibility = 'hidden'
     }
 }
+
+function definirHabilidade(Titulo, LocalizacaoImagem, Descricao) {
+    
+    let div = document.getElementById("habilidade__div");
+    let titulo = document.getElementById("habilidade__titulo");
+    let img = document.getElementById("habilidade__img");
+    let texto = document.getElementById("habilidade__texto");
+
+    div.style.display = "flex"
+    div.style.visibility = "visible"
+
+    titulo.innerHTML = Titulo
+    img.setAttribute("src", LocalizacaoImagem);
+    texto.innerHTML = Descricao
+}

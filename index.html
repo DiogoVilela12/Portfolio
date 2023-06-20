@@ -18,6 +18,7 @@
 </head>
 <body>
     <header>
+        
         <nav id="cabecalho" class="cabecalho">
             <div id="cabecalho__menu-linha" class="cabecalho__div">
                 <h1 class="cabecalho__div-nome">Diogo Vilela</h1>
@@ -64,54 +65,73 @@
         <h2 class="habilidades__titulo">Habilidades</h2>
         
         <div class="habilidades__div">
+            <div class="habilidades__div-divs">
+                <div class="habilidades__div-boxes">
 
-            <div class="habilidades__div-boxes">
-
-                <div class="habilidades__div-box">
-                    <img class="habilidades__imagem"
-                    src="svg/habilidades/java.svg"
-                    alt="Logo Java">
-                    <h3 class="habilidades__texto">Java</h3>
+                    <button
+                    onclick="definirHabilidade('Java', 'svg/habilidades/java.svg', 'Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems, que em 2008 foi adquirido pela empresa Oracle Corporation.')" class="habilidades__div-box">
+                        <img class="habilidades__imagem"
+                        src="svg/habilidades/java.svg"
+                        alt="Logo Java">
+                        <h3 class="habilidades__texto">Java</h3>
+                    </button>
+    
+                    <button
+                    onclick="definirHabilidade('Spring Boot', 'svg/habilidades/spring.svg', 'O Spring é um framework open source para a plataforma Java criado por Rod Johnson e descrito em seu livro &#34Expert One-on-One: JEE Design e Development&#34;. Trata-se de um framework não intrusivo, baseado nos padrões de projeto inversão de controle e injeção de dependência.')"  class="habilidades__div-box">
+                        <img class="habilidades__imagem"
+                        src="svg/habilidades/spring.svg" 
+                        alt="Logo Spring">
+                        <h3 class="habilidades__texto">Spring Boot</h3>
+                    </button>
+                    
                 </div>
-
-                <div class="habilidades__div-box">
-                    <img class="habilidades__imagem"
-                    src="svg/habilidades/spring.svg" 
-                    alt="Logo Spring">
-                    <h3 class="habilidades__texto">Spring Boot</h3>
+    
+                <div class="habilidades__div-boxes">
+    
+                    <button
+                    onclick="definirHabilidade('Hibernate', 'svg/habilidades/hibernate.svg', 'O Hibernate é um framework para o mapeamento objeto-relacional escrito na linguagem Java, mas também é disponível em .Net com o nome NHibernate.')"  class="habilidades__div-box">
+                        <img class="habilidades__imagem" 
+                        src="svg/habilidades/hibernate.svg" 
+                        alt="Logo hibernate">
+                        <h3 class="habilidades__texto">Hibernate</h3>
+                    </button>
+    
+                    <button
+                    onclick="definirHabilidade('MySQL', 'svg/habilidades/mysql.svg', 'O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface. É atualmente um dos sistemas de gerenciamento de bancos de dados mais populares da Oracle Corporation, com mais de 10 milhões de instalações pelo mundo.')" class="habilidades__div-box">
+                        <img class="habilidades__imagem" src="svg/habilidades/mysql.svg" alt="Logo MySQL">
+                        <h3 class="habilidades__texto">MySQL</h3>
+                    </button>
+    
                 </div>
-                
+    
+                <div class="habilidades__div-boxes">
+    
+                    <button
+                    onclick="definirHabilidade('JavaScript', 'svg/habilidades/javascript.svg', 'JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.')" 
+                    class="habilidades__div-box">
+                        <img class="habilidades__imagem" src="svg/habilidades/javascript.svg" alt="Logo JavaScript">
+                        <h3 class="habilidades__texto">JavaScript</h3>
+                    </button>
+    
+                    <button
+                    onclick="definirHabilidade('Python', 'svg/habilidades/python.svg', 'Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991.')" class="habilidades__div-box">
+                        <img class="habilidades__imagem" src="svg/habilidades/python.svg" alt="Logo python">
+                        <h3 class="habilidades__texto">Python</h3>
+                        <nav id="projetos" class="navigation_bar"></nav>
+                    </button>
+    
+                </div>
             </div>
+            
+            <div class="descricao__habilidade">
+                <h2 id="habilidade__titulo" class="descricao__habilidade-titulo">Selecione Um Titulo</h2>
 
-            <div class="habilidades__div-boxes">
+                <div id="habilidade__div"
+                class="descricao__habilidade-div">
+                    <img id="habilidade__img" class="descricao__habilidade-img" src="svg/habilidades/java.svg" alt="">
 
-                <div class="habilidades__div-box">
-                    <img class="habilidades__imagem" 
-                    src="svg/habilidades/hibernate.svg" 
-                    alt="Logo hibernate">
-                    <h3 class="habilidades__texto">Hibernate</h3>
+                    <p id="habilidade__texto" class="descricao__habilidade-texto">O Java Spring Boot (Spring Boot) é uma ferramenta que facilita e agiliza o desenvolvimento de aplicativos da web e de microsserviços com o Spring Framework por meio de três principais recursos: Autoconfiguração. Uma abordagem opinativa à configuração. A capacidade de criar aplicativos independentes.</p>
                 </div>
-
-                <div class="habilidades__div-box">
-                    <img class="habilidades__imagem" src="svg/habilidades/mysql.svg" alt="Logo MySQL">
-                    <h3 class="habilidades__texto">MySQL</h3>
-                </div>
-
-            </div>
-
-            <div class="habilidades__div-boxes">
-
-                <div class="habilidades__div-box">
-                    <img class="habilidades__imagem" src="svg/habilidades/javascript.svg" alt="Logo JavaScript">
-                    <h3 class="habilidades__texto">JavaScript</h3>
-                </div>
-
-                <div class="habilidades__div-box">
-                    <img class="habilidades__imagem" src="svg/habilidades/python.svg" alt="Logo python">
-                    <h3 class="habilidades__texto">Python</h3>
-                    <nav id="projetos" class="navigation_bar"></nav>
-                </div>
-
             </div>
         </div>
     </section>

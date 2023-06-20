@@ -64,3 +64,26 @@
         -moz-box-shadow: inset 0px 10px 10px 0px rgba(0,0,0,0.75);
         box-shadow: inset 0px 10px 10px 0px rgba(0,0,0,0.75);}
 }
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: 10px;
+    scrollbar-color: #000000 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #000000;
+  }

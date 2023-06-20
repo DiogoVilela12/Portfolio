@@ -36,7 +36,7 @@
 
     font-weight: 600;
     font-size: 2.5rem;
-    
+
     margin: 0 2rem 0 2rem;
 }
 
@@ -54,12 +54,27 @@
 
 /* ____________________ Tablet Width 768px ____________________*/
 
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) and (max-width: 1024px) {
     .sobre__div-foto-titulo {
         font-size: 3.5rem;
     }
 
     .sobre__div-descricao-texto {
         margin: 0 4rem;
+    }
+}
+
+/* ____________________ nootbook Width 1024px ____________________*/
+@media screen and (min-width:1024px){
+    .sobre__div-foto-img {
+        width: 40vh;
+    }    
+    
+    .sobre__div-foto-titulo {
+        font-size: 4rem;
+    }
+
+    .sobre__div-descricao-texto {
+        font-size: 1.5rem;
     }
 }

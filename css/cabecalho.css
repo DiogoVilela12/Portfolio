@@ -79,7 +79,44 @@
 
 /* ____________________ Tablet Width 768px ____________________*/
 
-@media screen and (min-width:768px) and (max-width: 1024px) {
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .cabecalho {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__div {        
+        width: 20%;
+    }
+
+    .cabecalho__menu-display {
+        position: static;
+        visibility: visible;
+    
+        justify-content: space-around;
+        flex-direction: row;
+        
+        text-align: center;
+    
+        height: 2.5rem;
+        width: 65%;
+    }
+    
+    .cabecalho__menu {
+        display: none;
+    }
+
+    .cabecalho__menu-link {
+        font-weight: normal;
+        font-size: 14px;
+    }
+}
+
+/* ____________________ dekstop Width 1024px ____________________*/
+
+@media screen and (min-width:1024px){
     .cabecalho {
         display: flex;
         flex-direction: row;

@@ -83,7 +83,7 @@
 
 /* ____________________ Tablet Width 768px ____________________*/
 
-@media screen and (min-width:768px) and (max-width: 1024px) {
+@media screen and (min-width:768px) and (max-width: 1023px) {
     .habilidades {
         justify-content: space-between;
     }
@@ -117,18 +117,19 @@
     }
 }
 
-/* ____________________ Tablet Width 1024px ____________________*/
+/* ____________________ dekstop Width 1024px ____________________*/
 @media screen and (min-width:1024px){
     .habilidades__div {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
 
-        margin-bottom: 2rem;
+        margin: 2rem;
     }
     
     .habilidades__div-boxes {
         width: 100%;
+        margin: 0;
     }
 
     .habilidades__div-divs{
@@ -151,10 +152,12 @@
 
         width: 40vw;
 
-        margin: 2rem;
-
         border: 1px solid black;
         border-radius: 15px;
+        
+        -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+        box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
     }
 
     .descricao__habilidade-titulo {
@@ -195,7 +198,12 @@
     /*_____Animações____*/
 
     .habilidades__div-box:hover {
-        transition: 3s;
-        background-color: gray;
+        animation: ButtonAnimation 1s;
+        transition: 1s;
+        background-color: #6A5ACD;
+
+        -webkit-box-shadow: inset 5px 5px 10px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 5px 5px 10px 0px rgba(0,0,0,0.75);
+        box-shadow: inset 5px 5px 10px 0px rgba(0,0,0,0.75);
     }
 }

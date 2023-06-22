@@ -9,7 +9,7 @@
 
 .projetos__titulo {
     background-color: transparent;
-    
+
     text-align: center;
     font-size: 30px;
     font-weight: bold;
@@ -22,10 +22,12 @@
 .projetos__boxes {
     background-color: transparent;
 
+    width: 100%;
+
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 
     margin-bottom: 3rem;
 }
@@ -36,8 +38,9 @@
     flex-direction: column;
     justify-content: space-between;
 
-    width: 35vh;
-    margin: 1rem;
+    margin: 1rem 0;
+
+    width: calc(100vh / 3);
 }
 
 .projetos__box-imagem {
@@ -46,9 +49,13 @@
     border: 1px solid black;
     border-radius: 20px;
 
-    -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.projetos__box-descricao {
+    display: none;
 }
 
 /* ____________________ Tablet Width 768px ____________________*/
@@ -60,11 +67,76 @@
 }
 
 /* ____________________ nootbook Width 1024px ____________________*/
-@media screen and (min-width:1024px){
-    .projetos__boxes {
+@media screen and (min-width:1024px) {
+    .projetos__box {
+        width: 99vw;
+
+        display: flex;
         flex-direction: row;
         justify-content: space-around;
+
+        margin: 1rem 0;
+    }
+
+    .projetos__box-imagem {
+        width: 40%;
+    }
+
+    .projetos__box-descricao {
+        background-color: white;
+
+        width: calc(40vw - 4rem);
+
+        padding: 2rem;
+
+        border: 1px solid black;
+        border-radius: 16px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+
+        -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .projetos__box-descricao-titulo {
+        background-color: transparent;
+
+        margin: 2vh;
+
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .projetos__box-descricao-paragrafo {
+        background-color: transparent;
         
-        width: 100%;
+        margin: 2vh;
+
+        font-size: 1.2rem;
+    }
+
+    .projetos__box-descricao-lista {
+        background-color: transparent;
+
+        height: calc(40% - 4vh);
+
+        align-self: flex-start;
+
+        list-style-type: disc;
+        list-style-position: inside;
+
+        font-size: 1.2rem;
+    }
+
+    .projetos__box-descricao-lista-item {
+        background-color: transparent;
+    }
+
+    .projetos__box:nth-child(2) {
+        flex-direction: row-reverse;
     }
 }

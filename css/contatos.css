@@ -26,14 +26,9 @@
 }
 
 .contatos__imagem {
-    background-color: white;
-    border: 1px solid white;
+    background-color: transparent;
     
-    width: 2rem;
-    border-radius: 30%;
-    -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    width: 8vh;
 }
 
 /* ____________________ Tablet Width 768px ____________________*/
@@ -48,13 +43,10 @@
 /* ____________________ nootbook Width 1024px ____________________*/
 @media screen and (min-width:1024px){
     .contatos {
-        margin-top: 4rem;
-        width: 50%;
+        margin-top: 1rem;
     }
 
-    .contatos__imagem:hover {
-
-        transition: 1s;
-        background-color: gray;
+    .contatos__boxes {
+        width: 55%;
     }
 }

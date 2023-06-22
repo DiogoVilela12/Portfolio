@@ -10,7 +10,7 @@
 .habilidades__titulo {
     background-color: transparent;
     text-align: center;
-    
+
     margin: 3rem 0px 2rem 0px;
 
     font-size: 2rem;
@@ -19,7 +19,7 @@
 
 .habilidades__div {
     background-color: transparent;
-    
+
     width: 100%;
 }
 
@@ -33,8 +33,8 @@
     display: flex;
     justify-content: space-between;
 
-    width: calc(100% - 8rem);
-    margin: 0 4rem;
+    width: calc(100% - 4rem);
+    margin: 0 2rem;
     margin-bottom: 2rem;
 }
 
@@ -51,9 +51,9 @@
 
     width: 40%;
 
-    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .habilidades__imagem {
@@ -87,28 +87,28 @@
     .habilidades {
         justify-content: space-between;
     }
-    
+
     .habilidades__div-boxes {
         margin: 0px;
         width: 100%;
         justify-content: space-around;
     }
-    
+
     .habilidades__imagem {
         width: 7vw;
     }
-    
+
     .habilidades__div {
         display: flex;
-        
+
         margin: 2rem;
     }
-    
+
     .habilidades__div-box {
         width: calc(100vw / 6 - 2rem);
-        margin: 1rem;
+        margin: .5rem;
     }
-    
+
     .habilidades__div-divs {
         display: flex;
         justify-content: space-around;
@@ -118,21 +118,21 @@
 }
 
 /* ____________________ dekstop Width 1024px ____________________*/
-@media screen and (min-width:1024px){
+@media screen and (min-width:1024px) {
     .habilidades__div {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
 
-        margin: 2rem;
+        margin: 2rem 0;
     }
-    
+
     .habilidades__div-boxes {
         width: 100%;
         margin: 0;
     }
 
-    .habilidades__div-divs{
+    .habilidades__div-divs {
         display: flex;
         background-color: transparent;
         flex-direction: column;
@@ -154,10 +154,10 @@
 
         border: 1px solid black;
         border-radius: 15px;
-        
-        -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
-        box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+
+        -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
     }
 
     .descricao__habilidade-titulo {
@@ -169,21 +169,21 @@
 
     .descricao__habilidade-div {
         background-color: transparent;
-        
+
         display: none;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
 
         visibility: hidden;
-        
+
         height: 100%;
     }
 
     .descricao__habilidade-img {
         background-color: transparent;
 
-        width: 10vh;
+        width: 25vh;
         margin: 1rem;
     }
 
@@ -191,19 +191,23 @@
         background-color: transparent;
 
         text-align: center;
+        font-size: .9rem;
+        height: 20vh;
 
-        margin: 2rem;
+        margin: 1rem 2rem;
     }
 
     /*_____Animações____*/
 
     .habilidades__div-box:hover {
-        animation: ButtonAnimation 1s;
-        transition: 1s;
-        background-color: #6A5ACD;
+        animation: ButtonAnimation .5s;
+        transition: .5s;
+        background-color: #03989E;
 
-        -webkit-box-shadow: inset 5px 5px 10px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: inset 5px 5px 10px 0px rgba(0,0,0,0.75);
-        box-shadow: inset 5px 5px 10px 0px rgba(0,0,0,0.75);
+        cursor: pointer;
+
+        -webkit-box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0);
+        -moz-box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0);
+        box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0);
     }
 }

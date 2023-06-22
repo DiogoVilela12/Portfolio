@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,9 +17,10 @@
 
     <title>Diogo Vilela</title>
 </head>
+
 <body>
     <header>
-        
+
         <nav id="cabecalho" class="cabecalho">
             <div id="cabecalho__menu-linha" class="cabecalho__div">
                 <h1 class="cabecalho__div-nome">Diogo Vilela</h1>
@@ -30,50 +32,56 @@
 
             <div id="cabecalho__menu-display" class="cabecalho__menu-display">
 
-                <a onclick="esconderMenu('cabecalho__menu-display')" class="cabecalho__menu-link" href="#sobre">SOBRE</a>
-                <a onclick="esconderMenu('cabecalho__menu-display')" class="cabecalho__menu-link" href="#habilidades">HABILIDADES</a>
-                <a onclick="esconderMenu('cabecalho__menu-display')" class="cabecalho__menu-link" href="#projetos">PROJETOS</a>
-                <a onclick="esconderMenu('cabecalho__menu-display')" class="cabecalho__menu-link" href="#formacoes">FORMAÇÕES</a>
+                <a onclick="esconderMenu('cabecalho__menu-display')" class="cabecalho__menu-link"
+                    href="#sobre">SOBRE</a>
+                <a onclick="esconderMenu('cabecalho__menu-display')" class="cabecalho__menu-link"
+                    href="#habilidades">HABILIDADES</a>
+                <a onclick="esconderMenu('cabecalho__menu-display')" class="cabecalho__menu-link"
+                    href="#projetos">PROJETOS</a>
+                <a onclick="esconderMenu('cabecalho__menu-display')" class="cabecalho__menu-link"
+                    href="#formacoes">FORMAÇÕES</a>
             </div>
         </nav>
-    
+
 
         <div id="sobre" class="sobre">
             <div class="sobre__div-foto">
 
-                <img class="sobre__div-foto-img" 
-                src="img/Logo.png" 
-                alt="Minha Imagem Linkedin">
+                <img class="sobre__div-foto-img" src="img/Logo.png" alt="Minha Imagem Linkedin">
 
                 <h2 class="sobre__div-foto-titulo">Desenvolvedor Java</h2>
             </div>
 
-            <div class="sobre__div-descricao">
-                
-                <p class="sobre__div-descricao-texto">
-                Meu nome é Diogo Vilela e eu sou um apaixonado por tecnologia que decidiu trilhar o caminho da programação. Trabalho com desenvolvimento de software desde 2021 tendo me aperfeiçoado em Java.</p>
-            </div>
-            <nav id="habilidades" class="navigation_bar"></nav>
-
-            
             <div id="contatos" class="contatos">
                 <div class="contatos__boxes">
                     <a target="_blank" class="contatos__link" href="https://www.linkedin.com/in/diogo-vilela-dev/">
                         <img src="svg/contatos/linkedin.svg" alt="Logo Linkedin" class="contatos__imagem">
                     </a>
-        
+
                     <a target="_blank" href="https://api.whatsapp.com/send?phone=5561999968564" class="contatos__link">
                         <img src="svg/contatos/whatsapp.svg" alt="Logo WhatsApp" class="contatos__imagem">
                     </a>
-                    <a  href="mailto: diogovillela12@gmail.com" class="contatos__link">
+                    <a href="mailto: diogovillela12@gmail.com" class="contatos__link">
                         <img src="svg/contatos/gmail.svg" alt="Logo Gmail" class="contatos__imagem">
                     </a>
                     <a target="_blank" href="https://github.com/DiogoVilela12" class="contatos__link">
-        
+
                         <img src="svg/contatos/github.svg" alt="Logo Gmail" class="contatos__imagem">
                     </a>
                 </div>
-                
+
+                <div class="sobre__div-descricao">
+
+                    <p class="sobre__div-descricao-texto">
+                        Meu nome é Diogo Vilela e eu sou um apaixonado por tecnologia que decidiu trilhar o caminho da
+                        programação. Trabalho com desenvolvimento de software desde 2021 tendo me aperfeiçoado em Java.
+                    </p>
+                </div>
+                <nav id="habilidades" class="navigation_bar"></nav>
+
+
+
+
             </div>
         </div>
     </header>
@@ -82,74 +90,75 @@
 
     <section class="habilidades">
         <h2 class="habilidades__titulo">Habilidades</h2>
-        
+
         <div class="habilidades__div">
             <div class="habilidades__div-divs">
                 <div class="habilidades__div-boxes">
 
                     <button
-                    onclick="definirHabilidade('Java', 'svg/habilidades/java.svg', 'Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems, que em 2008 foi adquirido pela empresa Oracle Corporation.')" class="habilidades__div-box">
-                        <img class="habilidades__imagem"
-                        src="svg/habilidades/java.svg"
-                        alt="Logo Java">
+                        onclick="definirHabilidade('Java', 'svg/habilidades/java.svg', 'Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems, que em 2008 foi adquirido pela empresa Oracle Corporation.')"
+                        class="habilidades__div-box">
+                        <img class="habilidades__imagem" src="svg/habilidades/java.svg" alt="Logo Java">
                         <h3 class="habilidades__texto">Java</h3>
                     </button>
-    
+
                     <button
-                    onclick="definirHabilidade('Spring Boot', 'svg/habilidades/spring.svg', 'O Spring é um framework open source para a plataforma Java criado por Rod Johnson e descrito em seu livro &#34Expert One-on-One: JEE Design e Development&#34;. Trata-se de um framework não intrusivo, baseado nos padrões de projeto inversão de controle e injeção de dependência.')"  class="habilidades__div-box">
-                        <img class="habilidades__imagem"
-                        src="svg/habilidades/spring.svg" 
-                        alt="Logo Spring">
+                        onclick="definirHabilidade('Spring Boot', 'svg/habilidades/spring.svg', 'O Spring é um framework open source para a plataforma Java criado por Rod Johnson e descrito em seu livro &#34Expert One-on-One: JEE Design e Development&#34;. Trata-se de um framework não intrusivo, baseado nos padrões de projeto inversão de controle e injeção de dependência.')"
+                        class="habilidades__div-box">
+                        <img class="habilidades__imagem" src="svg/habilidades/spring.svg" alt="Logo Spring">
                         <h3 class="habilidades__texto">Spring Boot</h3>
                     </button>
-                    
+
                 </div>
-    
+
                 <div class="habilidades__div-boxes">
-    
+
                     <button
-                    onclick="definirHabilidade('Hibernate', 'svg/habilidades/hibernate.svg', 'O Hibernate é um framework para o mapeamento objeto-relacional escrito na linguagem Java, mas também é disponível em .Net com o nome NHibernate.')"  class="habilidades__div-box">
-                        <img class="habilidades__imagem" 
-                        src="svg/habilidades/hibernate.svg" 
-                        alt="Logo hibernate">
+                        onclick="definirHabilidade('Hibernate', 'svg/habilidades/hibernate.svg', 'O Hibernate é um framework para o mapeamento objeto-relacional escrito na linguagem Java, mas também é disponível em .Net com o nome NHibernate.')"
+                        class="habilidades__div-box">
+                        <img class="habilidades__imagem" src="svg/habilidades/hibernate.svg" alt="Logo hibernate">
                         <h3 class="habilidades__texto">Hibernate</h3>
                     </button>
-    
+
                     <button
-                    onclick="definirHabilidade('MySQL', 'svg/habilidades/mysql.svg', 'O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface. É atualmente um dos sistemas de gerenciamento de bancos de dados mais populares da Oracle Corporation, com mais de 10 milhões de instalações pelo mundo.')" class="habilidades__div-box">
+                        onclick="definirHabilidade('MySQL', 'svg/habilidades/mysql.svg', 'O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface. É atualmente um dos sistemas de gerenciamento de bancos de dados mais populares da Oracle Corporation, com mais de 10 milhões de instalações pelo mundo.')"
+                        class="habilidades__div-box">
                         <img class="habilidades__imagem" src="svg/habilidades/mysql.svg" alt="Logo MySQL">
                         <h3 class="habilidades__texto">MySQL</h3>
                     </button>
-    
+
                 </div>
-    
+
                 <div class="habilidades__div-boxes">
-    
+
                     <button
-                    onclick="definirHabilidade('JavaScript', 'svg/habilidades/javascript.svg', 'JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.')" 
-                    class="habilidades__div-box">
+                        onclick="definirHabilidade('JavaScript', 'svg/habilidades/javascript.svg', 'JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.')"
+                        class="habilidades__div-box">
                         <img class="habilidades__imagem" src="svg/habilidades/javascript.svg" alt="Logo JavaScript">
                         <h3 class="habilidades__texto">JavaScript</h3>
                     </button>
-    
+
                     <button
-                    onclick="definirHabilidade('Python', 'svg/habilidades/python.svg', 'Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991.')" class="habilidades__div-box">
+                        onclick="definirHabilidade('Python', 'svg/habilidades/python.svg', 'Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991.')"
+                        class="habilidades__div-box">
                         <img class="habilidades__imagem" src="svg/habilidades/python.svg" alt="Logo python">
                         <h3 class="habilidades__texto">Python</h3>
                         <nav id="projetos" class="navigation_bar"></nav>
                     </button>
-    
+
                 </div>
             </div>
-            
+
             <div class="descricao__habilidade">
                 <h2 id="habilidade__titulo" class="descricao__habilidade-titulo">Selecione Um Titulo</h2>
 
-                <div id="habilidade__div"
-                class="descricao__habilidade-div">
+                <div id="habilidade__div" class="descricao__habilidade-div">
                     <img id="habilidade__img" class="descricao__habilidade-img" src="svg/habilidades/java.svg" alt="">
 
-                    <p id="habilidade__texto" class="descricao__habilidade-texto">O Java Spring Boot (Spring Boot) é uma ferramenta que facilita e agiliza o desenvolvimento de aplicativos da web e de microsserviços com o Spring Framework por meio de três principais recursos: Autoconfiguração. Uma abordagem opinativa à configuração. A capacidade de criar aplicativos independentes.</p>
+                    <p id="habilidade__texto" class="descricao__habilidade-texto">O Java Spring Boot (Spring Boot) é uma
+                        ferramenta que facilita e agiliza o desenvolvimento de aplicativos da web e de microsserviços
+                        com o Spring Framework por meio de três principais recursos: Autoconfiguração. Uma abordagem
+                        opinativa à configuração. A capacidade de criar aplicativos independentes.</p>
                 </div>
             </div>
         </div>
@@ -157,24 +166,90 @@
 
     <section class="projetos">
 
-        <h2 class="projetos__titulo">Experiência profissional</h2>
+        <h2 class="projetos__titulo">
+            Experiência profissional
+        </h2>
 
         <div class="projetos__boxes">
             <div class="projetos__box">
                 <img src="img/PROJETO EM OBRA B.jpg" alt="Projeto em Obra" class="projetos__box-imagem">
+
+                <div class="projetos__box-descricao">
+                    <h3 class="projetos__box-descricao-titulo">
+                        Titulo
+                    </h3>
+                    <p class="projetos__box-descricao-paragrafo">
+                        A Ctrl + Play é uma escola de tecnologia para crianças e adolescentes.
+                        Minha atuação na empresa:
+                    </p>
+
+                    <ul class="projetos__box-descricao-lista">
+                        <li class="projetos__box-descricao-lista-item">
+                            - Documentação de projetos.
+                        </li>
+                        <li class="projetos__box-descricao-lista-item">
+                            - Docência de alunos.
+                        </li>
+                        <li class="projetos__box-descricao-lista-item">
+                            - Criação de novos projetos.
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="projetos__box">
                 <img src="img/PROJETO EM OBRA B.jpg" alt="Projeto em Obra" class="projetos__box-imagem">
+
+                <div class="projetos__box-descricao">
+                    <h3 class="projetos__box-descricao-titulo">
+                        Titulo
+                    </h3>
+                    <p class="projetos__box-descricao-paragrafo">
+                        A Ctrl + Play é uma escola de tecnologia para crianças e adolescentes.
+                        Minha atuação na empresa:
+                    </p>
+
+                    <ul class="projetos__box-descricao-lista">
+                        <li class="projetos__box-descricao-lista-item">
+                            - Documentação de projetos.
+                        </li>
+                        <li class="projetos__box-descricao-lista-item">
+                            - Docência de alunos.
+                        </li>
+                        <li class="projetos__box-descricao-lista-item">
+                            - Criação de novos projetos.
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="projetos__box">
-                <nav id="formacoes" class="navigation_bar"></nav>
-
                 <img src="img/PROJETO EM OBRA B.jpg" alt="Projeto em Obra" class="projetos__box-imagem">
+
+                <div class="projetos__box-descricao">
+                    <h3 class="projetos__box-descricao-titulo">
+                        Titulo
+                    </h3>
+                    <p class="projetos__box-descricao-paragrafo">
+                        A Ctrl + Play é uma escola de tecnologia para crianças e adolescentes.
+                        Minha atuação na empresa:
+                    </p>
+
+                    <ul class="projetos__box-descricao-lista">
+                        <li class="projetos__box-descricao-lista-item">
+                            - Documentação de projetos.
+                        </li>
+                        <li class="projetos__box-descricao-lista-item">
+                            - Docência de alunos.
+                        </li>
+                        <li class="projetos__box-descricao-lista-item">
+                            - Criação de novos projetos.
+                        </li>
+                    </ul>
+                </div>
             </div>
+
         </div>
-        
     </section>
 
     <section class="formacoes">
@@ -183,9 +258,8 @@
 
         <div class="formacoes__boxes">
             <div class="formacoes__box">
-                <img src="img/PROJETO EM OBRA.jpg" alt="Projeto em Obra" 
-                id="formacoes__box-imagem"
-                class="formacoes__box-imagem">
+                <img src="img/PROJETO EM OBRA.jpg" alt="Projeto em Obra" id="formacoes__box-imagem"
+                    class="formacoes__box-imagem">
             </div>
 
             <div class="formacoes__box">
@@ -201,4 +275,5 @@
 </body>
 
 <script src="script.js"></script>
+
 </html>

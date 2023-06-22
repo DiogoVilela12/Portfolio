@@ -21,7 +21,7 @@
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    
+
     height: 2.5rem;
     width: 100%;
 }
@@ -50,7 +50,7 @@
 
 .cabecalho__menu-display {
     background-color: transparent;
-    
+
     position: fixed;
     visibility: hidden;
 
@@ -58,7 +58,7 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    
+
     text-align: center;
 
     top: 2.5rem;
@@ -71,7 +71,7 @@
     background-color: transparent;
 
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: bold;
 
     text-decoration: none;
 }
@@ -87,36 +87,36 @@
         align-items: center;
     }
 
-    .cabecalho__div {        
+    .cabecalho__div {
         width: 20%;
     }
 
     .cabecalho__menu-display {
         position: static;
         visibility: visible;
-    
+
         justify-content: space-around;
         flex-direction: row;
-        
+
         text-align: center;
-    
+
         height: 2.5rem;
         width: 65%;
     }
-    
+
     .cabecalho__menu {
         display: none;
     }
 
     .cabecalho__menu-link {
-        font-weight: normal;
+        font-weight: bold;
         font-size: 14px;
     }
 }
 
 /* ____________________ dekstop Width 1024px ____________________*/
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1024px) {
     .cabecalho {
         display: flex;
         flex-direction: row;
@@ -124,29 +124,29 @@
         align-items: center;
     }
 
-    .cabecalho__div {        
+    .cabecalho__div {
         width: 20%;
     }
 
     .cabecalho__menu-display {
         position: static;
         visibility: visible;
-    
+
         justify-content: space-around;
         flex-direction: row;
-        
+
         text-align: center;
-    
+
         height: 2.5rem;
         width: 65%;
     }
-    
+
     .cabecalho__menu {
         display: none;
     }
 
     .cabecalho__menu-link {
-        font-weight: normal;
+        font-weight: bold;
         font-size: 14px;
     }
 }

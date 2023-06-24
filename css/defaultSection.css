@@ -1,0 +1,139 @@
+.defaultSection {
+    animation: shadowMovesInSet 10s infinite;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.defaultSection__titulo {
+    background-color: transparent;
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+
+    width: 90%;
+
+    margin: 3rem 0px 2rem 0px;
+}
+
+.defaultSection__boxes {
+    background-color: transparent;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.defaultSection__box {
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 1rem 0;
+
+    width: 50vh;
+}
+
+.defaultSection__box-imagem {
+    width: 100%;
+
+    border: 1px solid black;
+    border-radius: 20px;
+
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.defaultSection__box-botao {
+    background-color: white;
+    color: black;
+
+    padding: 1rem;
+    margin: 1rem 0rem 3rem 0;
+    width: 25%;
+    
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    
+    border: 1px solid black;
+    border-radius: 25px;
+
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.defaultSection__box-botao:hover {
+    background-color: #03989E;
+    color: white;
+
+    border-color: white;
+
+    transition: 1s;
+
+    box-shadow: none;
+}
+
+.defaultSection__box-botao:not(:hover) {
+    transition: 1s;
+}
+
+#defaultSection__formacoes-box-botao {
+    color: black;
+    border-color: black;
+}
+
+#defaultSection__formacoes {
+    background-color: white;
+    
+    animation: shadowMoves 10s infinite;
+}
+
+/* ____________________ Tablet Width 768px ____________________*/
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .defaultSection__boxes {
+        flex-direction: row;
+    }
+
+    .defaultSection__box {
+        width: 50vh;
+    }
+
+    .defaultSection__box-botao {
+        width: 15%;
+        padding: .2rem;
+    }
+}
+
+/* ____________________ nootbook Width 1024px ____________________*/
+@media screen and (min-width:1024px) {
+    .defaultSection__box {
+        width: 99vw;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        margin: 1rem 0;
+    }
+
+    .defaultSection__boxes {
+        flex-direction: row;
+    }
+
+    .defaultSection__box-imagem {
+        width: 80%;
+    }
+}

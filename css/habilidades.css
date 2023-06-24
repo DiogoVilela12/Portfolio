@@ -200,14 +200,15 @@
     /*_____Animações____*/
 
     .habilidades__div-box:hover {
-        animation: ButtonAnimation .5s;
         transition: .5s;
         background-color: #03989E;
 
         cursor: pointer;
 
-        -webkit-box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0);
-        -moz-box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0);
-        box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0);
+        box-shadow: none;
     }
+
+    .habilidades__div-box:not(:hover) {
+        transition: 1s;
+    } 
 }

@@ -7,6 +7,10 @@
     margin: 3rem 1rem 1rem 1rem;
 }
 
+.sobre__dekstop {
+    display: none;
+}
+
 .sobre__div-foto {
     display: flex;
     align-items: center;
@@ -18,7 +22,7 @@
 }
 
 .sobre__div-foto-img {
-    animation: shakeImage 5s infinite;
+    animation: shakeImage 5s forwards infinite;
 
     position: relative;
 
@@ -86,6 +90,87 @@
 
     .sobre__div-descricao-texto {
         width: 100%;
+        font-size: 1.5rem;
+    }
+
+    /* _____Sobre Dekstop_____ */
+    .sobre {
+        display: none;
+    }
+
+    .sobre__dekstop {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+
+        margin: 3rem 1rem 1rem 1rem;
+    }
+
+    .sobre__dekstop-introducao {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    .sobre__dekstop-introducao-nome {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .sobre__dekstop-ola {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: space-between;  
+    }
+
+    .sobre__dekstop-apresentacao {
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+
+    .sobre__dekstop-profissao {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+
+        align-self: flex-start;
+    }
+
+    .sobre__dekstop-profissao-texto {
+        display: flex;
+    }
+
+    .sobre__dekstop-titulo {
+        animation: typing 5s forwards infinite;
+
+        text-align: start;
+        white-space: nowrap;
+        overflow: hidden;
+
+        margin: 0;
+    }
+
+    .sobre__dekstop-barra {
+        margin: 0;
+    }
+
+    .sobre__dekstop-barra::after {
+        content: '|';
+        animation: opacityOn 2.5s infinite forwards;
+    }
+
+    .sobre__dekstop-descricao {
+        width: 75%;
+
+        margin-top: 2rem;
+
+        text-align: center;
         font-size: 1.5rem;
     }
 }

@@ -43,14 +43,61 @@
             </div>
         </nav>
 
+        <div class="sobre__dekstop">
+            <div class="sobre__dekstop-introducao">
+                <div class="sobre__dekstop-introducao-nome">
+                    <img class="sobre__div-foto-img" src="img/Logo.png" alt="logo">
+                    <div class="sobre__dekstop-ola">
+                        <p class="sobre__dekstop-apresentacao">Ola, eu sou</p>
+                        <p>Diogo Vilela.</p>
+                    </div>
+                </div>
+                <div class="sobre__dekstop-profissao">
+                    <p>Desenvolvedor </p>
+                    <div class="sobre__dekstop-profissao-texto">
+
+                        <h2 id="typingAnimation" class="sobre__dekstop-titulo">Java</h2>
+                        <p class="sobre__dekstop-barra"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contatos" class="contatos">
+                <div class="contatos__boxes">
+                    <a target="_blank" class="contatos__link" href="https://www.linkedin.com/in/diogo-vilela-dev/">
+                        <img src="svg/contatos/linkedin.svg" alt="Logo Linkedin" class="contatos__imagem">
+                    </a>
+
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=5561999968564" class="contatos__link">
+                        <img src="svg/contatos/whatsapp.svg" alt="Logo WhatsApp" class="contatos__imagem">
+                    </a>
+                    <a href="mailto: diogovillela12@gmail.com" class="contatos__link">
+                        <img src="svg/contatos/gmail.svg" alt="Logo Gmail" class="contatos__imagem">
+                    </a>
+                    <a target="_blank" href="https://github.com/DiogoVilela12" class="contatos__link">
+
+                        <img src="svg/contatos/github.svg" alt="Logo Gmail" class="contatos__imagem">
+                    </a>
+                </div>
+
+                <div class="sobre__div-descricao">
+
+                    <p class="sobre__dekstop-descricao">
+                        Sou uma pessoa apaixonada por tecnologia que decidiu trilhar o caminho da
+                        programação. Trabalho com desenvolvimento de software desde 2021 tendo me aperfeiçoado em Java.
+                    </p>
+                </div>
+                <nav id="habilidades" class="navigation_bar"></nav>
+            </div>
+        </div>
+
 
         <div id="sobre" class="sobre">
             <div class="sobre__div-foto">
 
-                <img class="sobre__div-foto-img" src="img/Logo.png" alt="Minha Imagem Linkedin">
+                <img class="sobre__div-foto-img" src="img/Logo.png" alt="Logo">
 
                 <h2 class="sobre__div-foto-titulo">Desenvolvedor Java.</h2>
-
 
             </div>
 
@@ -75,8 +122,10 @@
                 <div class="sobre__div-descricao">
 
                     <p class="sobre__div-descricao-texto">
-                        Meu nome é Diogo Vilela e eu sou um apaixonado por tecnologia que decidiu trilhar o caminho da
-                        programação. Trabalho com desenvolvimento de software desde 2021 tendo me aperfeiçoado em Java.
+                        Meu nome é Diogo Vilela e eu sou um apaixonado por tecnologia que decidiu trilhar o caminho
+                        da
+                        programação. Trabalho com desenvolvimento de software desde 2021 tendo me aperfeiçoado em
+                        Java.
                     </p>
                 </div>
                 <nav id="habilidades" class="navigation_bar"></nav>
@@ -86,12 +135,13 @@
 
             </div>
         </div>
+
     </header>
 
-
+    <div class="transition"></div>
 
     <section class="habilidades">
-        <h2 class="habilidades__titulo">Habilidades</h2>
+        <h2 class="habilidades__titulo">Principais Habilidades</h2>
 
         <div class="habilidades__div">
             <div class="habilidades__div-divs">
@@ -141,10 +191,10 @@
                     </button>
 
                     <button
-                        onclick="definirHabilidade('Python', 'svg/habilidades/python.svg', 'Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991.')"
+                        onclick="definirHabilidade('Git', 'svg/habilidades/git.svg', 'O Git é um sistema de controle de revisão distribuído, rápido, escalável e com um conjunto de comandos incomumente rico que oferece operações de alto nível e acesso completo aos seus recursos.')"
                         class="habilidades__div-box">
-                        <img class="habilidades__imagem" src="svg/habilidades/python.svg" alt="Logo python">
-                        <h3 class="habilidades__texto">Python</h3>
+                        <img class="habilidades__imagem" src="svg/habilidades/git.svg" alt="Logo git">
+                        <h3 class="habilidades__texto">Git</h3>
                         <nav id="projetos" class="navigation_bar"></nav>
                     </button>
 
@@ -165,11 +215,13 @@
             </div>
         </div>
     </section>
+    
+    <div class="transition-inverted"></div>
 
     <section class="defaultSection">
 
         <h2 class="defaultSection__titulo">
-            Experiência profissional
+            Experiência Profissional
         </h2>
 
         <div class="defaultSection__boxes">
@@ -186,16 +238,18 @@
             </div>
 
         </div>
-         
+
         <a target="_blank" href="https://github.com/DiogoVilela12?tab=repositories" class="defaultSection__box-botao">
             Ver Mais
         </a>
     </section>
 
+    <div class="transition"></div>
+
     <section class="defaultSection" id="defaultSection__formacoes">
 
         <h2 class="defaultSection__titulo">
-            Experiência profissional
+            Formações
         </h2>
 
         <div class="defaultSection__boxes">
@@ -213,11 +267,13 @@
 
         </div>
 
-        <a target="_blank" href="https://github.com/DiogoVilela12?tab=repositories" class="defaultSection__box-botao" id="defaultSection__formacoes-box-botao">
+        <a target="_blank" href="https://github.com/DiogoVilela12?tab=repositories" class="defaultSection__box-botao"
+            id="defaultSection__formacoes-box-botao">
             Ver Mais
         </a>
 
     </section>
+
 
 </body>
 

@@ -1,6 +1,4 @@
 .defaultSection {
-    animation: shadowMovesInSet 10s infinite;
-
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -75,7 +73,7 @@
 }
 
 .defaultSection__box-botao:hover {
-    background-color: #03989E;
+    background-color: transparent;
     color: white;
 
     border-color: white;
@@ -96,8 +94,6 @@
 
 #defaultSection__formacoes {
     background-color: white;
-    
-    animation: shadowMoves 10s infinite;
 }
 
 /* ____________________ Tablet Width 768px ____________________*/

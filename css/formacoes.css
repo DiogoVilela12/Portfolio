@@ -1,7 +1,5 @@
 .formacoes {
     background-color: white;
-    
-    animation: shadowMoves 10s infinite;
 
     display: flex;
     align-items: center;

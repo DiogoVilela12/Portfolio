@@ -1,10 +1,10 @@
 .habilidades {
-    animation: shadowMoves 10s infinite;
     background-color: white;
 
     display: flex;
     align-items: center;
     flex-direction: column;
+
 }
 
 .habilidades__titulo {
@@ -210,5 +210,5 @@
 
     .habilidades__div-box:not(:hover) {
         transition: 1s;
-    } 
+    }
 }

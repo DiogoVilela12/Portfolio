@@ -22,7 +22,7 @@ function esconderMenu(elemento) {
 }
 
 function definirHabilidade(Titulo, LocalizacaoImagem, Descricao) {
-    
+
     let div = document.getElementById("habilidade__div");
     let titulo = document.getElementById("habilidade__titulo");
     let img = document.getElementById("habilidade__img");
@@ -35,3 +35,21 @@ function definirHabilidade(Titulo, LocalizacaoImagem, Descricao) {
     img.setAttribute("src", LocalizacaoImagem);
     texto.innerHTML = Descricao
 }
+
+// Typing animation
+
+let texto = document.getElementById("typingAnimation")
+let linguagens = ["Java", "Spring Boot", "Angular"]
+texto.addEventListener('animationiteration', evento => {
+    switch (texto.innerHTML) {
+        case "Java":
+            texto.innerHTML = linguagens[1]
+            break;
+        case "Spring Boot":
+            texto.innerHTML = linguagens[2]
+            break;
+        case "Angular":
+            texto.innerHTML = linguagens[0]
+            break;
+    }
+})

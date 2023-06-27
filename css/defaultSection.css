@@ -37,8 +37,6 @@
     justify-content: space-between;
 
     margin: 1rem 0;
-
-    width: 50vh;
 }
 
 .defaultSection__box-imagem {
@@ -52,6 +50,23 @@
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
+.defaultSection__box-imagem:hover {
+    transition: .5s;
+    box-shadow: none;
+}
+
+.defaultSection__box-imagem:not(:hover) {
+    transition: .5s;
+}
+
+.defaultSection__box-link {
+    width: calc(100% - 4rem);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .defaultSection__box-botao {
     background-color: white;
     color: black;
@@ -59,11 +74,11 @@
     padding: 1rem;
     margin: 1rem 0rem 3rem 0;
     width: 25%;
-    
+
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    
+
     border: 1px solid black;
     border-radius: 25px;
 
@@ -111,6 +126,10 @@
         width: 15%;
         padding: .2rem;
     }
+
+    .defaultSection__box-link {
+        width: calc(100% - 2rem);
+    }
 }
 
 /* ____________________ nootbook Width 1024px ____________________*/
@@ -130,6 +149,11 @@
     }
 
     .defaultSection__box-imagem {
+        width: 100%;
+    }
+
+    .defaultSection__box-link {
         width: 80%;
     }
+
 }

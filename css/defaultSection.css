@@ -60,8 +60,8 @@
 }
 
 .defaultSection__box-link {
-    width: calc(100% - 4rem);
-    
+    width: calc(80% - 4rem);
+
     display: flex;
     align-items: center;
     justify-content: center;

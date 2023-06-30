@@ -17,7 +17,7 @@
 
 .contatos__boxes {
     background-color: transparent;
-    
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,7 +27,7 @@
 
 .contatos__imagem {
     background-color: transparent;
-    
+
     width: 8vh;
 }
 
@@ -41,7 +41,7 @@
 
 
 /* ____________________ nootbook Width 1024px ____________________*/
-@media screen and (min-width:1024px){
+@media screen and (min-width:1024px) {
     .contatos {
         margin-top: 1rem;
     }

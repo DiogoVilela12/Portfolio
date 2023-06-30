@@ -65,7 +65,7 @@
 
 
 .sobre__div-ponto-animado {
-    opacity: 0; 
+    opacity: 0;
     font-size: 2.5rem;
 }
 
@@ -111,7 +111,7 @@
         display: flex;
         align-items: flex-end;
         flex-direction: column;
-        
+
         font-size: 4rem;
         font-weight: bold;
     }
@@ -125,7 +125,7 @@
         display: flex;
         align-items: start;
         flex-direction: column;
-        justify-content: space-between;  
+        justify-content: space-between;
     }
 
     .sobre__dekstop-apresentacao {

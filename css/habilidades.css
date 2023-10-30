@@ -18,6 +18,9 @@
 }
 
 .habilidades__div {
+    display: flex;
+    justify-content: space-around;
+
     background-color: transparent;
 
     width: 100%;
@@ -59,7 +62,7 @@
 .habilidades__imagem {
     background-color: transparent;
 
-    width: 10vh;
+    width: 5vh;
 
     margin: .5rem;
 }
@@ -113,7 +116,13 @@
         display: flex;
         justify-content: space-around;
 
+        flex-wrap: wrap;
+
         width: 100vw;
+    }
+
+    .habilidades__div-divs>* {
+        flex: 1 1
     }
 }
 
@@ -140,6 +149,11 @@
 
         width: 40vw;
         height: 70vh;
+    }
+
+    
+    .habilidades__div-divs>* {
+        flex: 1 1
     }
 
     .descricao__habilidade {

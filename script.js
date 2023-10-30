@@ -39,7 +39,7 @@ function definirHabilidade(Titulo, LocalizacaoImagem, Descricao) {
 // Typing animation
 
 let texto = document.getElementById("typingAnimation")
-let linguagens = ["Java", "Spring", "Hibernate"]
+let linguagens = ["Java", "Spring", "Angular", "JavaScript", "TypeScript"]
 texto.addEventListener('animationiteration', evento => {
     switch (texto.innerHTML) {
         case "Java":
@@ -48,7 +48,13 @@ texto.addEventListener('animationiteration', evento => {
         case "Spring":
             texto.innerHTML = linguagens[2]
             break;
-        case "Hibernate":
+        case "Angular":
+            texto.innerHTML = linguagens[3]
+            break;
+        case "JavaScript":
+            texto.innerHTML = linguagens[4]
+            break;
+        case "TypeScript":
             texto.innerHTML = linguagens[0]
             break;
     }

@@ -1,228 +1,248 @@
+/* Organização*/
+
+/* Cores, background, sombra e borda*/
+/* Posicionamento */
+/* Margens, preenchimento, Tamanho e largura*/
+/* texto */
+
+
 .habilidades {
+    /* Cores, background, sombra e borda*/
     background-color: white;
 
+    /* Posicionamento */
     display: flex;
     align-items: center;
     flex-direction: column;
 
+    /* Margens, preenchimento, Tamanho e largura*/
+    height: 105vh;
 }
 
 .habilidades__titulo {
+    /* Cores, background, sombra e borda*/
     background-color: transparent;
-    text-align: center;
 
+    /* Margens, preenchimento, Tamanho e largura*/
     margin: 3rem 0px 2rem 0px;
 
+    /* texto */
+    text-align: center;
     font-size: 2rem;
     font-weight: 600;
 }
 
 .habilidades__div {
+    /* Posicionamento */
     display: flex;
     justify-content: space-around;
 
-    background-color: transparent;
-
+    /* Margens, preenchimento, Tamanho e largura*/
     width: 100%;
+    height: 100vh;
+    margin: 2rem 0;
 }
 
-.habilidades__div-divs {
+.habilidades__div__divs {
+    /* Cores, background, sombra e borda*/
     background-color: transparent;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* Margens, preenchimento, Tamanho e largura*/
+    width: 40vw;
 }
 
 .habilidades__div-boxes {
+    /* Cores, background, sombra e borda*/
     background-color: transparent;
 
+    /* Posicionamento */
     display: flex;
     justify-content: space-between;
 
-    width: calc(100% - 4rem);
-    margin: 0 2rem;
-    margin-bottom: 2rem;
+    /* Margens, preenchimento, Tamanho e largura*/
+    width: 100%;
+    height: 16vh;
+    margin: 0;
 }
 
 .habilidades__div-box {
+    /* Cores, background, sombra e borda*/
     background-color: white;
+    border: 1px solid black;
+    border-radius: 1rem;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
 
+    /* Posicionamento */
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
 
-    border: 1px solid black;
-    border-radius: 1rem;
-
+    /* Margens, preenchimento, Tamanho e largura*/
     width: 40%;
+}
 
-    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+/*________________________________________animation________________________________________*/
+
+.habilidades__div-box:hover {
+    /* Cores, background, sombra e borda*/
+    background-color: #03989E;
+    box-shadow: none;
+
+    /* animation */
+    transition: .5s;
+    cursor: pointer;
+}
+
+.habilidades__div-box:not(:hover) {
+    /* _____Animações____ */
+    transition: 1s;
 }
 
 .habilidades__imagem {
+    /* Cores, background, sombra e borda*/
     background-color: transparent;
 
-    width: 5vh;
-
+    /* Margens, preenchimento, Tamanho e largura*/
+    width: 7vh;
     margin: .5rem;
 }
 
 .habilidades__texto {
+    /* Cores, background, sombra e borda*/
     background-color: transparent;
 
+    /* Margens, preenchimento, Tamanho e largura*/
+    margin: .5rem;
+
+    /* texto */
     text-align: center;
     font-size: 1rem;
-
-    margin: .5rem;
-}
-
-.habilidades__div-habilidade {
-    display: none;
 }
 
 .descricao__habilidade {
+    /* Cores, background, sombra e borda*/
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    /* Margens, preenchimento, Tamanho e largura*/
+    width: 40vw;
+}
+
+.descricao__habilidade-titulo {
+    /* Cores, background, sombra e borda*/
+    background-color: transparent;
+
+    /* Margens, preenchimento, Tamanho e largura*/
+    margin: 1rem;
+
+    /* texto */
+    text-align: center;
+    font-size: 2rem;
+}
+
+.descricao__habilidade-div {
+    /* Cores, background, sombra e borda*/
+    background-color: transparent;
+
+    /* Posicionamento */
+    visibility: hidden;
     display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    /* Margens, preenchimento, Tamanho e largura*/
+    height: 100%;
 }
 
-/* ____________________ Tablet Width 768px ____________________*/
+.descricao__habilidade-img {
+    /* Cores, background, sombra e borda*/
+    background-color: transparent;
 
-@media screen and (min-width:768px) and (max-width: 1023px) {
+    /* Margens, preenchimento, Tamanho e largura*/
+    margin: 1rem;
+    width: 25vh;
+}
+
+.descricao__habilidade-texto {
+    /* Cores, background, sombra e borda*/
+    background-color: transparent;
+
+    /* Margens, preenchimento, Tamanho e largura*/
+    margin: 1rem 2rem;
+
+    /* texto */
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+/* ________________________________________ Tablet Width 768px ________________________________________*/
+
+@media screen and (max-width: 767px) {
     .habilidades {
-        justify-content: space-between;
-    }
-
-    .habilidades__div-boxes {
-        margin: 0px;
-        width: 100%;
-        justify-content: space-around;
-    }
-
-    .habilidades__imagem {
-        width: 7vw;
+        /* Margens, preenchimento, Tamanho e largura*/
+        height: 110vh;
     }
 
     .habilidades__div {
-        display: flex;
-
-        margin: 2rem;
+        /* Margens, preenchimento, Tamanho e largura*/
+        margin-top: 0;
     }
 
-    .habilidades__div-box {
-        width: calc(100vw / 6 - 2rem);
-        margin: .5rem;
+    .habilidades__titulo {
+        /* Margens, preenchimento, Tamanho e largura*/
+        margin: 1rem;
     }
 
-    .habilidades__div-divs {
-        display: flex;
-        justify-content: space-around;
-
-        flex-wrap: wrap;
-
-        width: 100vw;
-    }
-
-    .habilidades__div-divs>* {
-        flex: 1 1
-    }
-}
-
-/* ____________________ dekstop Width 1024px ____________________*/
-@media screen and (min-width:1024px) {
-    .habilidades__div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-
-        margin: 2rem 0;
+    .habilidades__div__divs {
+        /* Margens, preenchimento, Tamanho e largura*/
+        width: 100%;
     }
 
     .habilidades__div-boxes {
-        width: 100%;
-        margin: 0;
-    }
-
-    .habilidades__div-divs {
-        display: flex;
-        background-color: transparent;
-        flex-direction: column;
+        /* Posicionamento */
         justify-content: space-around;
-
-        width: 40vw;
-        height: 70vh;
-    }
-
-    
-    .habilidades__div-divs>* {
-        flex: 1 1
     }
 
     .descricao__habilidade {
-        background-color: white;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        /* Posicionamento */
         justify-content: space-around;
-
-        width: 40vw;
-
-        border: 1px solid black;
-        border-radius: 15px;
-
-        -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
-        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
     }
 
-    .descricao__habilidade-titulo {
-        background-color: transparent;
-        font-size: 2rem;
-
-        margin: 1rem;
-    }
-
-    .descricao__habilidade-div {
-        background-color: transparent;
-
+    .descricao__habilidade {
+        /* Posicionamento */
         display: none;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-
-        visibility: hidden;
-
-        height: 100%;
     }
+}
 
-    .descricao__habilidade-img {
-        background-color: transparent;
-
-        width: 25vh;
-        margin: 1rem;
+/* ________________________________________ desktop Width 1024px ________________________________________*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .habilidades {
+        /* Margens, preenchimento, Tamanho e largura*/
+        height: 110vh;
     }
 
     .descricao__habilidade-texto {
-        background-color: transparent;
-
-        text-align: center;
-        font-size: .9rem;
-        height: 20vh;
-
-        margin: 1rem 2rem;
-    }
-
-    /*_____Animações____*/
-
-    .habilidades__div-box:hover {
-        transition: .5s;
-        background-color: #03989E;
-
-        cursor: pointer;
-
-        box-shadow: none;
-    }
-
-    .habilidades__div-box:not(:hover) {
-        transition: 1s;
+        /* texto */
+        font-size: .8rem;
     }
 }
